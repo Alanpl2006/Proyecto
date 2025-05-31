@@ -1,0 +1,131 @@
+:root{ 
+    --barra:#4cd503; 
+    --texto:#000000; 
+    
+} 
+ 
+html{ 
+    font-size: 62.5%; 
+    box-sizing: border-box; 
+} 
+ 
+*, *:before, *:after { 
+  box-sizing: inherit; 
+} 
+ 
+body{ 
+    font-size: 16px; 
+    font-family: "Merriweather", serif; 
+     
+} 
+ 
+@media (min-width:480px){}
+    body{
+        background-color:orange
+}
+
+.barra{
+    background-color:var(--barra);
+}
+ 
+h1{ 
+    font-size: 6rem; 
+    font-family: "Pacifico", cursive; 
+    text-align: center; 
+    color:var(--texto); 
+} 
+ 
+h2{ 
+    font-size: 3.5rem; 
+    text-align: center; 
+    color:var(--texto); 
+} 
+ 
+.contenedor{ 
+    max-width: 120rem; 
+    margin: 0 auto; 
+} 
+ 
+.nav-bg{ 
+    background-color: var(--barra); 
+    text-align: center;
+  
+
+} 
+ 
+.navegacion-principal{ 
+    display: flex; 
+    flex-direction:column; 
+    justify-content: space-between; 
+} 
+ 
+.navegacion-principal a{ 
+    color:var(--texto); 
+    text-decoration: none; 
+    font-size: 1.8rem; 
+    font-weight: 700; 
+    padding:1rem; 
+} 
+ 
+ @media (min-width:768px){
+   .navegacion-principal{ 
+   flex-direction:row; 
+   justify-content: space-between;   
+   }
+ }
+  
+
+.hero{ 
+    background-image: url(../img/ferreteria.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    position: relative; 
+    height:60rem; 
+}
+
+ 
+.contenido-hero{ 
+    position: absolute; 
+    background-color: rgba(0,0,0,.5); 
+    height: 100%; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+} 
+ 
+.contenido-hero p{ 
+    color:var(--texto); 
+    font-weight: bold; 
+} 
+
+
+ 
+.rejilla{ 
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap:1rem; 
+}
+
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    align-items: center;
+}
+ 
+.servicio h3{ 
+    font-size: 1rem; 
+    font-weight: bold; 
+    color:var(--texto); 
+    display: flex; 
+}
+
+.formulario{ 
+    width: min(70rem, 100%);    
+     background-color: var(--barra);     margin:0 auto;     border-radius: 1rem; 
+    padding:1rem; 
+}
+
